@@ -1,0 +1,425 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 version
+*/
+
+/*
+Colors used
+
+Text Color (Dark Gray): #2b2b2b;
+Primary Color (Purple): #357b70;
+Secondary Color (Orange): #e0b354;
+ */
+
+
+
+ /*
+ other commands that are commonly used for font styling etc. are:
+
+ font-size: --px;
+ line-height: 1.0;
+ font-style: bold/italic;
+ text-decoration: underline/none;        if something is underlined, as an example, you can use a hover tag saying "none" that would take that away while hovering over the text
+ font-variation: small-caps;
+*/
+
+:root {
+    /*colors*/
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  header {
+          padding: 10px; 
+          margin: 10px; 
+          border: 1px solid black; 
+  }
+  
+  
+  footer {
+      padding: 10px; 
+      margin: 10px; 
+      border: 1px solid black; 
+  }
+  
+  
+  
+  body{
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.6;
+  }
+  
+  
+  
+  
+  
+  h1 {
+      font-size: 30px;
+      font-weight: 700;
+    }
+    
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  
+  
+  
+  
+  
+    a {
+      color: #357b70;
+    }
+    a:visited {
+      color: #695597;
+    }
+    a:active {
+      color: #823085;
+    }  
+    a:hover, a:focus {
+      text-decoration: none;
+    }
+  
+  
+  
+  
+  
+    .button {
+  
+      border: none;
+      display: inline-block;
+      font-family: inherit;
+  
+      background-color: #357b70;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 3px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  
+      -webkit-transition-duration: 0.2s;
+  
+              transition-duration: 0.2s;
+      -webkit-transition-property: opacity;
+      transition-property: opacity;
+    }
+  
+  
+  
+  
+  
+    button {
+  
+      border: none;
+      display: inline-block;
+      font-family: inherit;
+  
+      background-color: #357b70;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 3px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  
+      -webkit-transition-duration: 0.2s;
+  
+              transition-duration: 0.2s;
+      -webkit-transition-property: opacity;
+      transition-property: opacity;
+    }
+    
+    button:hover, button:focus, .button:hover, .button:focus {
+      cursor: pointer;
+      opacity: 0.7
+    }
+  /*
+    .button__secondary {
+      background-color: #e0b354;
+      color: #2b2b2b;
+    }
+  */
+    
+  
+  
+  
+  
+    .navigation-list {
+      list-style-type: none;
+    
+        li {
+        display: inline-block;
+        margin-left: 15px;
+    
+        .navigation-list__item--active {
+          text-decoration: none;
+        }
+      }
+    }
+  
+  /* the above code used to be:
+  
+  .navigation-list {
+    list-style-type: none;
+  }
+  
+  .navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  
+  .navigation-list__item--active {
+    text-decoration: none;
+  }
+  */
+    
+  
+    div {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid black; 
+  
+    }
+  
+  
+    .profile__portrait {
+      float: left;
+      width: 250px;
+      height:auto;
+      margin-right: 40px;
+      border-radius: 50%;
+  
+    }
+  
+    .page__footer {
+      clear: both;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile {
+      max-width: 700px;
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  
+    /*
+    this is the first usage of the flex property - commands that can be used here are
+  
+      display: flex;
+      flex-direction: row / column / row or column-reverse;
+      flex-basis: ___ px; (this does not equal width- moreso that this is the starting point)
+      flex-grow: 1; (will fill any extra space with all of the contained child elements)
+      flex-shrink: 2; (can allow for a specific child element to shrink where others can fill more space -- :nth-child()    )
+      can use     order: x;   to change the order of elements 
+  
+      justify-content: center/left/right;     alligns along the axis of the current flex direction
+                       column/row;     
+  
+      allign-items: center;        alligns off of the non-dominant axis
+  
+      */
+  
+      .page-header {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          width: 100%;
+          padding: 20px;
+        }
+      
+        .page-header__item {
+          -webkit-box-flex: 0;
+              -ms-flex: 0 1 200px;
+                  flex: 0 1 200px;
+        }
+  
+        .page-header__item:last-child {
+          -webkit-box-flex: .9;
+              -ms-flex-positive: .9;
+                  flex-grow: .9;
+          text-align: right;
+        }
+  
+  
+  
+  
+  
+  
+  
+  
+        .grid {
+          display: -ms-grid;
+          display: grid;
+          -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 20px;
+        }
+        .grid__item {
+          background-color: rgb(211, 211, 211);
+          padding: 10px
+        }
+        .grid__item:last-child {
+          -ms-grid-column: 3;
+          grid-column: 3 / 3;
+          -ms-grid-row: 1;
+          -ms-grid-row-span: 2;
+          grid-row: 1 / 3;
+        }
+  
+  
+  @-webkit-keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+    50% {
+      fill: #fcffad;
+    }
+    100% {
+      fill: #f76414;
+    }
+  }
+  
+  
+  @keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+    50% {
+      fill: #fcffad;
+    }
+    100% {
+      fill: #f76414;
+    }
+  }
+  
+  .sun {
+      -webkit-animation-duration: 30s;
+              animation-duration: 30s;
+      -webkit-animation-name: color-change;
+              animation-name: color-change;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+              animation-direction: alternate;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+    }
+  
+    @-webkit-keyframes cloud-move {
+      from {
+        -webkit-transform: translate(0, 50px);
+                transform: translate(0, 50px);
+      }
+      to {
+        -webkit-transform: translate(200px, 50px);
+                transform: translate(200px, 50px);
+      }
+    }
+  
+    @keyframes cloud-move {
+      from {
+        -webkit-transform: translate(0, 50px);
+                transform: translate(0, 50px);
+      }
+      to {
+        -webkit-transform: translate(200px, 50px);
+                transform: translate(200px, 50px);
+      }
+    }
+    @-webkit-keyframes cloud-move-reverse {
+      from {
+        -webkit-transform: translate(446px, 48px);
+                transform: translate(446px, 48px);
+      }
+      to {
+        -webkit-transform: translate(100px, 48px);
+                transform: translate(100px, 48px);
+      }
+    }
+    @keyframes cloud-move-reverse {
+      from {
+        -webkit-transform: translate(446px, 48px);
+                transform: translate(446px, 48px);
+      }
+      to {
+        -webkit-transform: translate(100px, 48px);
+                transform: translate(100px, 48px);
+      }
+    }
+  
+  
+    .cloud-front {
+      -webkit-animation-duration: 30s;
+              animation-duration: 30s;
+      -webkit-animation-name: cloud-move;
+              animation-name: cloud-move;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+              animation-direction: alternate;
+      -webkit-animation-timing-function: linear;
+              animation-timing-function: linear;
+    }
+    .cloud-back {
+      -webkit-animation: 30s cloud-move-reverse infinite alternate linear;
+              animation: 30s cloud-move-reverse infinite alternate linear;
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        @media all and (max-width: 500px) {
+          .grid {
+            -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
+          }
+        }
+        @media all and (min-width: 500px) and (max-width: 750px){
+          .grid {
+            -ms-grid-columns: 1fr 20px 1fr;
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+        @media all and (max-width: 750px) {
+          .grid {
+            grid-gap: 10px;
+          }
+          .grid__item:last-child {
+            grid-column: auto / auto;
+            grid-row: auto / auto;
+          }
+          h1 {
+            font-size: 22px;
+          }
+        }
