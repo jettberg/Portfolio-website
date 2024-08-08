@@ -23,6 +23,7 @@ Secondary Color (Orange): #e0b354;
 --activeColor: #823085;
 --baseLinkColor: #357b70;
 --visitedColor: #695597;
+
 --buttonText: white;
 --gridBGcolor: rgb(211, 211, 211);
 
@@ -47,6 +48,7 @@ header {
         padding: var(--basePadding); 
         margin: var(--baseMargin); 
         border: var(--baseBorder) solid black; 
+        background-color: lightgrey;
 }
 
 
@@ -196,7 +198,14 @@ h1 {
     bottom: 20px;
     transform: translate(-50%, -50%);
     margin: 0 auto;
-  }
+    }
+
+      .snap-points {
+        position: fixed;
+        right: 5%;
+        top: 15%;
+      }
+
 
   .profile {
     max-width: 700px;
@@ -329,3 +338,55 @@ h1 {
           font-size: 22px;
         }
       }
+
+
+/* The following is the CSS for the photogallery page*/
+
+
+
+      div.gallery {
+        border: 1px solid #ccc;
+      }
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+      div.desc {
+        padding: 5px;
+        text-align: center;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .responsive {
+        padding: 0 300px;
+        float: left;
+
+
+/* this is the place where the image size changes */
+
+        width: 70%;
+      
+      }
+      
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+      
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
