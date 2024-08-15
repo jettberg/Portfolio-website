@@ -25,8 +25,13 @@ Secondary Color (Orange): #e0b354;
  font-variation: small-caps;
 */
 
+:root {
+    /*colors*/
+  }
   
-  
+  .table{
+    border: 1px solid black;
+  }
   
   
   
@@ -196,7 +201,7 @@ Secondary Color (Orange): #e0b354;
   
     .profile__portrait {
       float: left;
-      width: 250px;
+      width: 400px;
       height:auto;
       margin-right: 40px;
       border-radius: 50%;
@@ -213,10 +218,25 @@ Secondary Color (Orange): #e0b354;
           -ms-flex-direction: column;
               flex-direction: column;
       text-align: center;
-    }
+      border: none;
+  
+      position: fixed;
+      left: 50%;
+      bottom: 0;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      margin: 0 auto;
+      }
+  
+        .snap-points {
+          position: fixed;
+          right: 1%;
+          top: 15%;
+        }
+  
   
     .profile {
-      max-width: 700px;
+      max-width: 1200px;
       margin: auto;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -240,6 +260,7 @@ Secondary Color (Orange): #e0b354;
   
       */
   
+  
       .page-header {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -260,8 +281,6 @@ Secondary Color (Orange): #e0b354;
                   flex-grow: .9;
           text-align: right;
         }
-  
-  
   
   
   
@@ -387,16 +406,6 @@ Secondary Color (Orange): #e0b354;
     }
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
         @media all and (max-width: 500px) {
           .grid {
             -ms-grid-columns: 1fr;
@@ -421,3 +430,56 @@ Secondary Color (Orange): #e0b354;
             font-size: 22px;
           }
         }
+  
+  
+  /* The following is the CSS for the photogallery page*/
+  
+  
+  
+        div.gallery {
+          border: 1px solid #ccc;
+        }
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+        div.desc {
+          padding: 5px;
+          text-align: center;
+        }
+        * {
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+        }
+        .responsive {
+          padding: 0 300px;
+          float: left;
+  
+  
+  /* this is the place where the image size changes */
+  
+          width: 70%;
+        
+        }
+        
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+          }
+        }
+        @media only screen and (max-width: 500px) {
+          .responsive {
+            width: 100%;
+          }
+        }
+        
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+  

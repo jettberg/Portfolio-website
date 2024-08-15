@@ -179,7 +179,7 @@ h1 {
 
   .profile__portrait {
     float: left;
-    width: 250px;
+    width: 400px;
     height:auto;
     margin-right: 40px;
     border-radius: 50%;
@@ -195,20 +195,20 @@ h1 {
 
     position: fixed;
     left: 50%;
-    bottom: 20px;
+    bottom: 0;
     transform: translate(-50%, -50%);
     margin: 0 auto;
     }
 
       .snap-points {
         position: fixed;
-        right: 5%;
+        right: 1%;
         top: 15%;
       }
 
 
   .profile {
-    max-width: 700px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
   }
