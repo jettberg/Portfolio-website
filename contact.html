@@ -45,55 +45,65 @@
     </nav>
   </header>
 
-  <div>
-    <h1>Here are some ways to contact me</h1>
+  <main class="content">
+    <div class="page-container">
+      <h1>Let's get in touch! <br> Ways to connect with me</h1>
 
+      <p> Thank you for your interest in getting in touch with me. I welcome your feedback, questions, and suggestions.
+        If you have a specific question or comment, please feel free to email me directly at Jettmberg@gmail.com. I make
+        an effort to respond to all messages within 24 hours, although it may take me longer during busy periods.
+        Alternatively, you can use the contact form on my website to get in touch. Simply fill out the required fields
+        and I'll get back to you as soon as possible. Finally, if you prefer to connect on social media, you can find me
+        on any of what I have posted! I post regular updates and engage with my followers there, so don't hesitate to
+        reach out. Thanks again for your interest, and I look forward to hearing from you!</p>
+      <p>
+        <strong>Phone:</strong>
+        <a href="tel:+16122396172">+1 (612) 239-6172</a><br>
 
-    Located in <br>
-    Minneapolis, Minnesota.<br>
-    <br>
-    <br><br>
-    My number: <a href="tel:+123-456-7890">mobile: +612-239-6172</a><br>
-    My Skype username: <a href="skype:hello.careerfoundry"> JettsFakeSkype.Askype</a><br>
-    My work email: <a href="mailto:jettmberg@gmail.com">jettmberg@gmail.com</a>
+        <strong>Email:</strong>
+        <a href="mailto:jettmberg@gmail.com">jettmberg@gmail.com</a>
+        <br>
+        My Medium: <a href="https://medium.com/@Jettmberg" target="_blank" rel="noopener">
+          medium.com/@Jettmberg
+        </a>
+      </p>
 
-  </div>
+    </div>
 
-  <div>
-    <a href="mailto:office@careerfoundry.com">Contact me</a> and leave a message, i'll get back to you.<br><br>
+    <div>
 
+      <form action="post" method="post" id="contact-form" class="contact-form">
+        <label class="standard-label" for="contact-email">Email: </label>
+        <input type="email" id="contact-email" name="email" required>
 
-    <form action="post" method="post" id="contact-form">
-      <label class="standard-label" for="contact-email">Email: </label>
-      <input type="email" id="contact-email" required>
+        <label class="standard-label" for="contact-tel">Telephone: </label>
+        <input type="tel" id="contact-tel" name="telephone">
 
-      <label class="standard-label" for="contact-tel">Telephone: </label>
-      <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-tel">
+        <label for="my-input">Message me:</label>
+        <textarea id="my-input" name="message" required maxlength="240"></textarea>
 
-
-      <label for="my-input">Message me:</label>
-      <textarea required maxlength="240" id="my-input"></textarea>
-      <input type="submit" value="Submit" id="contact-message">
-    </form>
-  </div>
-
+        <input type="submit" value="Submit" id="contact-message">
+      </form>
+    </div>
+  </main>
 
   <script src="js/tota11y.min.js"></script>
   <script src="js/stylelint.config.js"></script>
 
 
 
-<footer class="page__footer">
-  <p>Find me on</p>
+  <footer class="page__footer">
+    <p>Find me on</p>
 
-  <div style="border: none" class="social-media">
-    <img src="./img/github.svg" alt="Github logo">
-    <img src="./img/instagram.svg" alt="Instagram logo">
-    <img src="./img/slack.svg" alt="Slack logo"><br>
-  </div>
-</footer>
+    <div style="border: none" class="social-media">
+      <img src="./img/github.svg" alt="Github logo">
+      <img src="./img/instagram.svg" alt="Instagram logo">
+      <img src="./img/slack.svg" alt="Slack logo"><br>
+    </div>
+  </footer>
 
 
 
 </body>
+
 </html>

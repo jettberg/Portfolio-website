@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-
-
-
 <html lang="en">
 
 <head>
@@ -11,127 +8,220 @@
    <title>My portfolio - Work and Projects</title>
 
    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
    <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 
-
-
 <body>
 
-
    <header class="page-header">
-      <img src="./img/JettBerg-text.PNG" class="page-header__item"
-         alt="Personal logo of Jett Berg, consisting of a pixelart text saying my name, Jett Berg">
+      <img src="./img/JettBerg-text.PNG" class="page-header__item" alt="Personal logo of Jett Berg">
 
       <nav class="main navigation page-header__item">
-
          <ul role="menubar" class="navigation-list">
-            <li role="presentation">
-               <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-            </li>
-            <li role="presentation">
-               <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
-            </li>
-            <li role="presentation">
-               <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-            </li>
-
-
-            <li role="presentation">
-               <a href="work.html" role="menuitem" class="navigation-list__item--active">My work</a>
-            </li>
-            <li role="presentation">
-               <a href="photogallery.html" role="menuitem" class="navigation-list__item">Photo gallery</a>
-            </li>
-
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="work.html" class="navigation-list__item--active">My work</a></li>
+            <li><a href="photogallery.html">Photo gallery</a></li>
          </ul>
-
       </nav>
    </header>
 
+   <section class="projects page-containe">
+      <h1>Projects</h1>
 
+      <!-- Meet App -->
+      <div class="project">
+         <img src="./img/projects/meet.png" alt="Screenshot of Meet event app" class="project-image">
 
+         <h2>Meet App (PWA)</h2>
+         <p class="project-description">
+            A Progressive Web App for discovering tech events. Includes filtering by city, data visualization with
+            charts,
+            offline functionality, and automated testing.
+         </p>
+         <p class="project-tech"><strong>Tech:</strong> React, Vite, Recharts, PWA, Testing</p>
 
-
-
-
-   <section>
-      <h1>The work and projects that I have done!</h1>
-      <div class="grid">
-
-
-         <div class="grid__item">
-            <h2>Number 1</h2>
-            <p>
-               Still working on a description
-            </p>
-            <a href="#">See project on GitHub</a>
+         <div class="project-links">
+            <a class="button" href="https://meet-sigma-ten.vercel.app/" target="_blank" rel="noopener">Live Demo</a>
+            <a class="button" href="https://github.com/jettberg/meet" target="_blank" rel="noopener">GitHub</a>
+            <button class="button readme-btn" data-title="Meet App README"
+               data-readme="https://raw.githubusercontent.com/jettberg/meet/main/README.md">
+               View README
+            </button>
          </div>
-
-         <div class="grid__item">
-            <h2>Number 2</h2>
-            <p>
-               Still working on a description
-            </p>
-            <a href="#">See project on GitHub</a>
-         </div>
-
-         <div class="grid__item">
-            <h2>Number 3</h2>
-            <p>
-               Still working on a description
-            </p>
-            <a href="#">See project on GitHub</a>
-         </div>
-
-         <div class="grid__item">
-            <h2>Number 4</h2>
-            <p>
-               Still working on a description
-            </p>
-            <a href="#">See project on GitHub</a>
-         </div>
-
-         <!-- could add another here if I wanted to, but I like the look of the grid without a 6th-->
-
-         <div class="grid__item">
-            <h2>Number 5</h2>
-            <p>
-               Still working on a description
-            </p>
-            <a href="#">See project on GitHub</a>
-         </div>
-
       </div>
+
+      <!-- myFlix React -->
+      <div class="project">
+         <img src="./img/projects/react-myflix.png" alt="Screenshot of myFlix React client" class="project-image">
+
+         <h2>myFlix Client (React)</h2>
+         <p class="project-description">
+            A single-page movie application allowing users to register, browse movies, manage favorites,
+            and update their profile using a custom REST API backend.
+         </p>
+         <p class="project-tech"><strong>Tech:</strong> React, React Router, Bootstrap, REST API</p>
+
+         <div class="project-links">
+            <a class="button" href="https://myflix-frontend.netlify.app/" target="_blank" rel="noopener">Live Demo</a>
+            <a class="button" href="https://github.com/jettberg/myFlix-client" target="_blank" rel="noopener">GitHub</a>
+            <button class="button readme-btn" data-title="myFlix React Client README"
+               data-readme="https://raw.githubusercontent.com/jettberg/myFlix-client/main/README.md">
+               View README
+            </button>
+         </div>
+      </div>
+
+      <!-- myFlix API -->
+      <div class="project">
+         <img src="./img/projects/rest-api.png" alt="Screenshot of myFlix REST API" class="project-image">
+
+         <h2>myFlix REST API</h2>
+         <p class="project-description">
+            A backend REST API that serves movie, genre, director, and user data. Includes authentication,
+            authorization, and user favorites functionality.
+         </p>
+         <p class="project-tech"><strong>Tech:</strong> Node.js, Express, MongoDB, JWT, Passport</p>
+
+         <div class="project-links">
+            <a class="button" href="https://movies-my-flix-application-7f3ae970a7e3.herokuapp.com/" target="_blank"
+               rel="noopener">Live API</a>
+            <a class="button" href="https://github.com/jettberg/movie_api" target="_blank" rel="noopener">GitHub</a>
+            <button class="button readme-btn" data-title="myFlix API README"
+               data-readme="https://raw.githubusercontent.com/jettberg/movie_api/main/README.md">
+               View README
+            </button>
+         </div>
+      </div>
+
+      <!-- Pokedex -->
+      <div class="project">
+         <img src="./img/projects/pokemon.png" alt="Screenshot of Pokémon JavaScript app" class="project-image">
+
+         <h2>Pokédex (JavaScript App)</h2>
+         <p class="project-description">
+            A JavaScript web application that loads Pokémon data from an external API and dynamically displays details
+            using modals.
+         </p>
+         <p class="project-tech"><strong>Tech:</strong> JavaScript, HTML, CSS, Bootstrap, PokéAPI</p>
+
+         <div class="project-links">
+            <a class="button" href="https://jettberg.github.io/JSapp/" target="_blank" rel="noopener">Live Demo</a>
+            <a class="button" href="https://github.com/jettberg/JSapp" target="_blank" rel="noopener">GitHub</a>
+            <button class="button readme-btn" data-title="Pokédex README"
+               data-readme="https://raw.githubusercontent.com/jettberg/JSapp/main/README.md">
+               View README
+            </button>
+         </div>
+      </div>
+
+      <!-- Let's Chat -->
+      <div class="project">
+         <img src="./img/projects/lets-chat.png" alt="Screenshot of Let's Chat mobile app" class="project-image mobile-image">
+
+         <h2>Let’s Chat (React Native)</h2>
+         <p class="project-description">
+            A mobile chat application built with React Native featuring real-time messaging, image sharing,
+            and location sharing using Firebase.
+         </p>
+         <p class="project-tech"><strong>Tech:</strong> React Native (Expo), Firebase</p>
+
+         <div class="project-links">
+            <a class="button" href="https://github.com/jettberg/lets-chat" target="_blank" rel="noopener">GitHub</a>
+            <button class="button readme-btn" data-title="Let’s Chat README"
+               data-readme="https://raw.githubusercontent.com/jettberg/lets-chat/main/README.md">
+               View README
+            </button>
+         </div>
+      </div>
+
+      <!-- Angular myFlix -->
+      <div class="project">
+         <img src="./img/projects/angular.png" alt="Screenshot of myFlix Angular client" class="project-image">
+
+         <h2>myFlix Client (Angular)</h2>
+         <p class="project-description">
+            An Angular-based frontend for the myFlix application, demonstrating component architecture,
+            routing, and TypeScript integration.
+         </p>
+         <p class="project-tech"><strong>Tech:</strong> Angular, TypeScript, REST API</p>
+
+         <div class="project-links">
+            <a class="button" href="https://jettberg.github.io/myFlix-Angular-client/" target="_blank"
+               rel="noopener">Live Demo</a>
+
+            <a class="button" href="https://github.com/jettberg/myFlix-Angular-client/" target="_blank"
+               rel="noopener">GitHub</a>
+
+            <button class="button readme-btn" data-title="myFlix Angular Client README"
+               data-readme="https://raw.githubusercontent.com/jettberg/myFlix-Angular-client/main/README.md">
+               View README
+            </button>
+         </div>
+      </div>
+
    </section>
 
-
-
-
-
+   <!-- README Modal (one per page) -->
+   <dialog id="readmeModal" class="readme-modal">
+      <div class="readme-modal__header">
+         <p id="readmeTitle" class="readme-modal__title">README</p>
+         <button id="closeReadme" class="button" type="button">Close</button>
+      </div>
+      <pre id="readmeContent" class="readme-content">Loading...</pre>
+   </dialog>
 
    <footer class="page__footer">
       <p>Find me on</p>
-
-      <div style="border: none" class="social-media">
+      <div class="social-media">
          <img src="./img/github.svg" alt="Github logo">
          <img src="./img/instagram.svg" alt="Instagram logo">
-         <img src="./img/slack.svg" alt="Slack logo"><br>
+         <img src="./img/slack.svg" alt="Slack logo">
       </div>
-      <!-- Do i need these in my project??
-
-        <a href="#">Default Link</a>
-        <button type="button">Default Button</button>
-
-        <button class="button__secondary">Secondary Button</button>
--->
    </footer>
 
+   <script>
+      const modal = document.getElementById("readmeModal");
+      const content = document.getElementById("readmeContent");
+      const titleEl = document.getElementById("readmeTitle");
+      const closeBtn = document.getElementById("closeReadme");
 
-   <script src="js/tota11y.min.js"></script>
-   <script src="js/stylelint.config.js"></script>
+      async function openReadme(url, title) {
+         titleEl.textContent = title || "README";
+         content.textContent = "Loading...";
+         modal.showModal();
+
+         try {
+            const res = await fetch(url, { cache: "no-store" });
+            if (!res.ok) throw new Error("Could not load README");
+            const text = await res.text();
+            content.textContent = text;
+         } catch (e) {
+            content.textContent = "Sorry — README could not be loaded.";
+         }
+      }
+
+      document.querySelectorAll(".readme-btn").forEach(btn => {
+         btn.addEventListener("click", () => {
+            openReadme(btn.dataset.readme, btn.dataset.title);
+         });
+      });
+
+      closeBtn.addEventListener("click", () => modal.close());
+
+      modal.addEventListener("click", (e) => {
+         const rect = modal.getBoundingClientRect();
+         const clickedInDialog =
+            rect.top <= e.clientY &&
+            e.clientY <= rect.top + rect.height &&
+            rect.left <= e.clientX &&
+            e.clientX <= rect.left + rect.width;
+
+         if (!clickedInDialog) modal.close();
+      });
+   </script>
+
 </body>
 
 </html>
